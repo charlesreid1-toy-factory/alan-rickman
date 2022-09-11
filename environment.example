@@ -1,0 +1,9 @@
+#!/bin/bash
+set -a
+
+ALAN_RICKMAN_HOME="${HOME}/alan-rickman"
+
+ALAN_RICKMAN_GITHUB_API_TOKEN="000000000000000"
+
+ALAN_RICKMAN_TEST_MODE="standalone"
+#ALAN_RICKMAN_TEST_MODE="integration"
