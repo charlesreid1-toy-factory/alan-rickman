@@ -12,9 +12,9 @@ repos:
       name: flake8 for src
       entry: flake8
       language: system
+      types: [python]
       verbose: true
       pass_filenames: true
-      files: ^src/
   - repo: https://github.com/psf/black
     rev: 22.3.0
     hooks:
