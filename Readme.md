@@ -12,6 +12,8 @@ alt="tests-pytest" src="https://img.shields.io/badge/tests-pytest-green" />
 alt="codestyle-black" src="https://img.shields.io/badge/codestyle-black-%23222222" /><img 
 alt="codestyle-flake8" src="https://img.shields.io/badge/codestyle-flake8-blue" />
 
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
 <img alt="python-3.9-3.10" src="https://img.shields.io/badge/python-3.9%7C3.10-blue" />
 
 ![Alan Rickman](docs/img/snape.jpg)
