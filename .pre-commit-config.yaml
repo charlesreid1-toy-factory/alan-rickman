@@ -7,28 +7,11 @@ repos:
     language: system
     verbose: true
     pass_filenames: true
-    files: src/*.py
-
-  - id: flake8
-    name: flake8 for tests
-    entry: flake8
-    language: system
-    verbose: true
-    pass_filenames: true
-    files: tests/*.py
-
+    files: src/gh.py
   - id: black
     name: black for src
     entry: black
     language: system
     verbose: true
     pass_filenames: true
-    files: src/*.py
-
-  - id: black
-    name: black for tests
-    entry: black
-    language: system
-    verbose: true
-    pass_filenames: true
-    files: tests/*.py
+    files: src/gh.py
