@@ -1,4 +1,7 @@
+import os
+
 from github import Github
+
 
 def fetch():
     k = "ALAN_RICKMAN_GITHUB_ACCESS_TOKEN"
