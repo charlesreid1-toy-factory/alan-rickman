@@ -74,6 +74,15 @@ $ python3
 >>>
 ```
 
+Finally, to install the pre-commit hooks, run this command
+from the command line from the repository root:
+
+```
+pre-commit install
+```
+
+This will install pre-commit checks as specified in `.pre-commit-config.yaml`.
+
 
 ## Running Tests
 
