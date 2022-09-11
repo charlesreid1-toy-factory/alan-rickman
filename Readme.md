@@ -1,5 +1,21 @@
 # alan-rickman
 
+
+<img alt="version-0.1.0" src="https://img.shields.io/badge/version-0.1.0-orange" />
+
+<img 
+alt="tests-unittest" src="https://img.shields.io/badge/tests-unittest-green" /><img 
+alt="tests-mock" src="https://img.shields.io/badge/tests-mock-green" /><img
+alt="tests-pytest" src="https://img.shields.io/badge/tests-pytest-green" />
+
+<img
+alt="codestyle-black" src="https://img.shields.io/badge/codestyle-black-%23222222" /><img 
+alt="codestyle-flake8" src="https://img.shields.io/badge/codestyle-flake8-blue" />
+
+<img alt="python-3.9-3.10" src="https://img.shields.io/badge/python-3.9%7C3.10-blue" />
+
+![Alan Rickman](docs/img/snape.jpg)
+
 A Python project that wraps an authenticated API, and
 implements tests with pytest and mock. Also demonstrates
 how to separate offline and online tests, and safely

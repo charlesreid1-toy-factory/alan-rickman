@@ -1,6 +1,7 @@
 # https://github.com/github/gitignore/blob/main/Python.gitignore
 vp
 environment
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
