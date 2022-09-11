@@ -16,7 +16,7 @@ repos:
       pass_filenames: true
       files: ^src/
   - repo: https://github.com/psf/black
-    rev: 21.12b0
+    rev: 22.3.0
     hooks:
       - id: black
   - repo: https://github.com/PyCQA/isort
