@@ -10,6 +10,7 @@ help:
 
 lint:
 	flake8 $(MODULES)
+	black --check $(MODULES)
 
 mypy:
 	mypy --ignore-missing-imports --no-strict-optional $(MODULES)
