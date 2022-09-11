@@ -1,17 +1,26 @@
 repos:
-- repo: local
-  hooks:
-  - id: flake8
-    name: flake8 for src
-    entry: flake8
-    language: system
-    verbose: true
-    pass_filenames: true
-    files: src/gh.py
-  - id: black
-    name: black for src
-    entry: black
-    language: system
-    verbose: true
-    pass_filenames: true
-    files: src/gh.py
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.1.0
+    hooks:
+      - id: check-added-large-files # prevents giant files from being committed.
+      - id: check-executables-have-shebangs # ensures that (non-binary) executables have a shebang.
+      - id: check-shebang-scripts-are-executable # ensures that (non-binary) files with a shebang are executable.
+      - id: trailing-whitespace # trims trailing whitespace.
+  - repo: local
+    hooks:
+    - id: flake8
+      name: flake8 for src
+      entry: flake8
+      language: system
+      verbose: true
+      pass_filenames: true
+      files: ^src/
+  - repo: https://github.com/psf/black
+    rev: 21.12b0
+    hooks:
+      - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        args: [--profile=black]
