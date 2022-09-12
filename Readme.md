@@ -3,13 +3,13 @@
 
 <img alt="version-0.1.0" src="https://img.shields.io/badge/version-0.1.0-orange" />
 
-<img 
-alt="tests-unittest" src="https://img.shields.io/badge/tests-unittest-green" /><img 
+<img
+alt="tests-unittest" src="https://img.shields.io/badge/tests-unittest-green" /><img
 alt="tests-mock" src="https://img.shields.io/badge/tests-mock-green" /><img
 alt="tests-pytest" src="https://img.shields.io/badge/tests-pytest-green" />
 
 <img
-alt="codestyle-black" src="https://img.shields.io/badge/codestyle-black-%23222222" /><img 
+alt="codestyle-black" src="https://img.shields.io/badge/codestyle-black-%23222222" /><img
 alt="codestyle-flake8" src="https://img.shields.io/badge/codestyle-flake8-blue" />
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
@@ -88,18 +88,28 @@ This will install pre-commit checks as specified in `.pre-commit-config.yaml`.
 
 ## Running Tests
 
-Follow this procedure to run the test suite.
+Before running tests, run `make requirements-test` to install packages required for tests.
 
-Run `make requirements-test` to install packages required for tests.
+Tests can run in standalone mode (offline) or integration mode (online). Integration mode
+requires a working GitHub API access token, which you can specify via the `environment` file
+or the `ALAN_RICKMAN_GITHUB_ACCESS_TOKEN` environment var.
 
-Update `environment` to control whether standalone (offline) or integration (online)
-tests are run.
+The test mode is specified via an environment variable `ALAN_RICKMAN_TEST_MODE`.
 
 Run `make test` to run the test suite.
 
 **Note: Running standalone tests does not require a real GitHub API access token.
 Integration tests do require a real access token. Any Github user's access token
 will work.**
+
+![Screenshot of "make test" output](docs/img/test_ss.jpg)
+
+
+## Environment Variables
+
+* `ALAN_RICKMAN_HOME` - location of the repository root, used by scripts
+* `ALAN_RICKMAN_GITHUB_ACCESS_TOKEN` - GitHub API access token
+* `ALAN_RICKMAN_TEST_MODE` - which mode to run tests in (standalone, integration, or both)
 
 
 ## Technologies Used
