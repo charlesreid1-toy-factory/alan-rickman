@@ -4,10 +4,21 @@ from unittest import mock
 
 from alan_rickman.gh import fetch
 
+from tests import mode as testmode
+
 HERE = os.path.split(os.path.abspath(__file__))[0]
 
 
-class TestFetchStandalone(unittest.TestCase):
+class TestFetch(unittest.TestCase):
+    @testmode.integration
+    def test_fetch_integration(self):
+        """
+        Test fetch(), the lone function in alan-rickman, in integration mode.
+        """
+        git_url = fetch()
+        self.assertGreater(len(git_url), 0)
+
+    @testmode.standalone
     def test_fetch_standalone(self):
         """
         Test fetch(), the lone function in alan-rickman, in standalone mode.
