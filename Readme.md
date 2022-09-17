@@ -102,7 +102,7 @@ Run `make test` to run the test suite.
 Integration tests do require a real access token. Any Github user's access token
 will work.**
 
-![Screenshot of "make test" output](docs/img/test_ss.jpg)
+![Screenshot of "make test" output](docs/img/test_ss.png)
 
 
 ## Environment Variables
@@ -138,4 +138,4 @@ Lint and style:
 * Separation of standalone and integation tests
 
 (The use of the PyGithub library is not the feature of this repo,
-but it is a really great library!)
+but PyGuthub is a really great library!)
